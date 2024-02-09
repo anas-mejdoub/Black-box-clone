@@ -1,0 +1,209 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.App {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  font-family: 'Lato';
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+/* .send-button{
+  width: 4vw;
+  height: 50px;
+  background-color: black;
+} */
+.message-input::placeholder {
+  color: white;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8vh;
+}
+.send-button {
+  width: 4vw;
+  height: 50px;
+  background-color: #5072df;
+  border-radius: 10px;
+  /* color: black; */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button-start{
+  /* display: flex;
+  justify-content: space-around; */
+  outline: none;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.message-input {
+  width: 50vw;
+  height: 50px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size: 16px;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-family: 'Fira Code', monospace;
+  border-radius: 10px;
+}
+.button{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #444343;
+  color: white;
+  transition: .3s;
+}
+.button:hover{
+  background-color: #626262;
+  font-size: 19px;
+  outline: none;
+  border: none;
+}
+.button:focus{
+  
+  outline: none;
+  border: none;
+}
+.conversation{
+  /* height: 95vh;
+  width: 50vw; */
+  padding: 0px;
+  background-color: rgb(40, 40, 40);
+  color: white; 
+  overflow-y: auto;
+  flex-grow: 1;
+  overflow-x: hidden;
+  /* display: flex;
+  flex-direction: column; */
+  gap: 10px;
+
+}
+.chats-name{
+  display: block;
+  width: 100%;
+
+  background-color: #444343;
+  color: white;
+  border: none;
+  transition: .3s;
+}
+.chats-name:hover{
+  font-size: 18px;
+}
+.slogan h2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 30px;
+}
+.slogan {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100%; /* Or set to the height you want */
+}
+.chats-name:focus{
+ outline: none;
+ border: none;
+}
+.chats-name:hover{
+  background-color: #626262;
+ }
+.messages{
+  padding: 10px;
+  height: 92vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+  gap: 20px;
+  /* overflow-y: scroll; */
+}
+.chat-container{
+  display: flex;
+  flex-direction: column;
+
+}
+.message{
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-family: 'Lato', monospace;
+}
+.message hr{
+  border: 1px solid rgb(51, 51, 51);
+}
+.chat-sidebar {
+  width: 10vw;
+  background-color: #444343;
+  color: white;
+  outline: none;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2px;
+}
+.chats-name{
+  display: flex;
+  flex-direction: column;
+}
+.chat-list-item {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+
+
+.chat-main {
+  flex-grow: 1;
+  padding: 20px;
+}
+/* ::-webkit-scrollbar { */
+  /* width: 9px; width of the scrollbar */
+/* } */
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1; color of the track */
+/* } */
+/* ::-webkit-scrollbar-thumb {
+  background: #868686; /* color of the thumb */
+  /* border-radius: 6px; rounded corners of the thumb */
+/* }  */
+/* ::-webkit-scrollbar-thumb:hover { */
+  /* background: #555; color of the thumb on hover */
+/* } */
+/* Add any additional styles for the main chat area here */
