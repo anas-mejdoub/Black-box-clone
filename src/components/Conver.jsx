@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 import Highlight from 'react-highlight'
 
 function helper(message) {
-    if (message.sender == "ChatGPT")
+    if (message.sender == "ChatGPT") 
         return "ChatGPT:";
     else
         return "You:";

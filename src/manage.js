@@ -7,3 +7,4 @@ promise.then(function (response) {
     console.log(error); // Failure
 });
 // export response;
+ 

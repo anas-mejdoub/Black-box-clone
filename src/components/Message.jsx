@@ -7,7 +7,7 @@ function Message({ message, onEdit }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedMessage, setEditedMessage] = useState(message);
 
-  const handleEdit = () => {
+  const handleEdit = () => { 
     setIsEditing(true);
   };
 

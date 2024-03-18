@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Chats(props) {
-  return (
+  return ( 
     <div className="chat-sidebar">
         <button className='button' onClick={props.NewChat}><p>Start a new chat</p><i class="fa-solid fa-pen-to-square"></i></button>
           {props.chats && props.chats.map((chat, i) => {

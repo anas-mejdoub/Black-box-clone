@@ -5,7 +5,7 @@ import '../App.css';
 function CustomInput(props) {
     const [inputValue, setInputValue] = useState('');
 
-    const handleChange = (event) => {
+    const handleChange = (event) => { 
         setInputValue(event.target.value);
         if (props.onChange) {
             props.onChange(event.target.value);
